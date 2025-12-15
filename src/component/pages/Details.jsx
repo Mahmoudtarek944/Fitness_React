@@ -9,12 +9,12 @@ function Details({ exerciseDetail }) {
     return <p className="text-center">Loading exercise details...</p>;
   }
 
-  // console.log(exerciseDetail);
+  console.log(exerciseDetail);
   return (
     <>
       <div className="container mt-3 d-flex justify-content-evenly">
         <img
-          src={`/api/exercise-image?id=${id}`}
+          src={`http://localhost:5000/exercise-image/${id}`}
           className="imgDetalis"
           alt=""
         />

@@ -24,7 +24,7 @@ function Exercises({ exercise, search }) {
           >
             <Card.Img
               variant="top"
-              src={`/api/exercise-image?id=${ex.id}`}
+              src={`http://localhost:5000/exercise-image/${ex.id}`}
               loading="lazy"
               className="card-img w-50 d-flex justify-content-center"
             />
