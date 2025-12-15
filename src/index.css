@@ -106,6 +106,16 @@ body {
     object-fit: cover;
   }
 }
+.bi-heart {
+  transition: 0.4s;
+}
+.bi-heart:hover {
+  color: red !important ;
+}
+
+.footer-bg {
+  background: #fff5f5;
+}
 @media screen and (max-width: 556px) {
   .mainNav {
     justify-content: space-evenly;

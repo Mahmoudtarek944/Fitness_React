@@ -23,14 +23,14 @@ function SearchExercises() {
 
     fetchExerciesData();
 
-    // async function handelData() {
-    //   const exercisesData = await getData(
-    //     `https://exercisedb.p.rapidapi.com/exercises`,
-    //     exerciseOptions
-    //   );
-    //   setExercises(exercisesData);
-    // }
-    // handelData();
+    async function handelData() {
+      const exercisesData = await getData(
+        `https://exercisedb.p.rapidapi.com/exercises`,
+        exerciseOptions
+      );
+      setExercises(exercisesData);
+    }
+    handelData();
   }, []);
 
   async function handelData() {
